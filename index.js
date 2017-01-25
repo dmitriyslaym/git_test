@@ -30,24 +30,24 @@ window.onload = function() {
 	};
 
 	addBtn.onclick = function(e) {
-		rulesArr.push(newRule);
 		e.preventDefault();
+		var newRuleObj = Object.assign({}, newRule);
+		rulesArr.push(newRuleObj);
 		clearInputs();
 		console.log(rulesArr);
 	};
 
 	clearBtn.onclick = function(e) {
-		e.preventDefault();
-		clearInputs();
+		e.preventDefault();		
 		rulesArr.splice(0,rulesArr.length);
-		rulesArr.push({});				
-		console.log(rulesArr);
+		rulesArr.push({});	
+		clearInputs();
+		console.log(rulesArr);				
 	};
-
-	var newRulesArr = [];	
 	
 	delBtn.onclick = function(e) {
 		e.preventDefault();	
+		var newRulesArr = [];
 		for (var i = 0; i < rulesArr.length; i++) {
 			if (JSON.stringify(rulesArr[i]) === JSON.stringify(newRule)) {
 				continue;
@@ -55,7 +55,7 @@ window.onload = function() {
 			newRulesArr.push(rulesArr[i]);
 		};
 		rulesArr = newRulesArr;
-		clearInputs();
-		console.log(newRulesArr);
+		clearInputs();	
+		console.log(rulesArr);	
 	};
 };
