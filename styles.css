@@ -1,0 +1,52 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	outline: none;
+}
+
+#gitForm {
+	width: 40%;
+	margin: 40px;
+}
+
+.field {
+    height: 34px;    
+    font-size: 14px;        
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.input {
+	color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+}
+
+.row {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin: 0 20px;
+}
+
+#delBtn {
+	background-color: #c10000;
+}
+
+#applyBtn {
+	background-color: #16afce;
+}
+
+#clearBtn {
+	background-color: #f7b613;
+}
+
+#addBtn {
+	background-color: #25a000;
+}

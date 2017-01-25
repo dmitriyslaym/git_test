@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Git Hub Test</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="index.js"></script>
+</head>
+<body>
+	<form id="gitForm" action="POST">
+		<div class="row">
+			<div>
+				<select class="field input" id="selectedField">
+				 	<option value="" disabled selected hidden>Field...</option>
+	        		<option value="size">Size</option>
+	        		<option value="forks">Forks</option>
+	        		<option value="stars">Stars</option>
+	        		<option value="followers">Followers</option>
+	        	</select>
+	        	<select class="field input" id="selectedOperator">
+				 	<option value="" disabled selected hidden>Operator...</option>
+	        		<option value=">">></option>
+	        		<option value="<"><</option>
+	        		<option value="=">=</option>
+	        	</select>	
+				<input class="field input" type="text" placeholder="Value..." id="selectedValue">
+			</div>	
+			<button class="field button" id="delBtn">Delete</button>
+		</div>
+		<hr />
+		<div class="row">
+			<div>
+				<button class="field button" id="applyBtn">Apply</button>
+				<button class="field button" id="clearBtn">Clear</button>
+			</div>
+			<button class="field button" id="addBtn">Add Rule</button>
+		</div>
+	</form>
+</body>
+</html>
